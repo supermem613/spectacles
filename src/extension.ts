@@ -1,26 +1,90 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import DisposableCollection from "./DisposableCollection";
+
+export function foldLines(foldLines: Array<number>) {
+	const textEditor = vscode.window.activeTextEditor;
+	if (!textEditor)
+	{
+		return;
+	}
+	const selection = textEditor.selection;
+  
+	for (const lineNumber of foldLines) {
+	  textEditor.selection = new vscode.Selection(lineNumber, 0, lineNumber, 0);
+	  vscode.commands.executeCommand('editor.fold');
+	  console.log('folding ' + textEditor.selection.anchor.line);
+	}
+	textEditor.selection = selection;
+	textEditor.revealRange(textEditor.selection, vscode.TextEditorRevealType.InCenter);
+  }
+
+class MyFoldingRangeProvider implements vscode.FoldingRangeProvider {
+provideFoldingRanges(document: vscode.TextDocument, context: vscode.FoldingContext, token: vscode.CancellationToken): vscode.FoldingRange[] {
+	let ranges = Array<vscode.FoldingRange>();
+
+	for (var i = 0; i < document.lineCount - 1; i ++)
+	{
+		ranges.push(new vscode.FoldingRange(i, i + 1, vscode.FoldingRangeKind.Comment));
+	}
+
+	return ranges;
+}
+}
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "spectacles" is now active!');
 
+	let localDisposables = new DisposableCollection;
+
+//	context.subscriptions.push(
+		// TODO(MEM);
+	//	vscode.languages.registerFoldingRangeProvider('ULS', new MyFoldingRangeProvider()));
+
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('spectacles.helloWorld', () => {
+	localDisposables.add(vscode.commands.registerCommand('spectacles.trim', () => {
 		// The code you place here will be executed every time your command is executed
 
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from spectacles!');
-	});
+		let array = Array<vscode.Range>();
 
-	context.subscriptions.push(disposable);
+		let editor = vscode.window.activeTextEditor;
+		if (editor)
+		{
+			let lines = editor.document.lineCount;
+			for (var i = 0; i < lines; i++)
+			{
+				let line = editor.document.lineAt(i);
+				let match = line.text.match("\\tCentral Table");
+
+				if (!match || (match.length === 0))
+				{
+					array.push(line.rangeIncludingLineBreak);
+					//editor.selection = new vscode.Selection(i, 0, i, 0);
+					//vscode.commands.executeCommand('editor.fold');
+				}
+			}
+		
+			editor.edit((edit) => {
+				for (var i = 0; i < array.length; i++)
+				{
+					edit.delete(array[i]);
+				}});
+		}
+
+		//foldLines(array);
+
+		// Display a message box to the user
+		vscode.window.showInformationMessage('Trim complete.');
+	}));
+
+	context.subscriptions.push(localDisposables);
 }
 
 // this method is called when your extension is deactivated
