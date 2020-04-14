@@ -1,5 +1,6 @@
 {
 	"name": "spectacles",
+	"publisher": "supermem613",
 	"displayName": "spectacles",
 	"description": "Visualizer for Logs",
 	"version": "0.0.1",
@@ -10,21 +11,58 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:spectacles.helloWorld"
+		"onView:errorsList",
+		"onLanguage:ULS",
+		"onCommand:spectacles.trim"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "log-explorer",
+					"title": "Log Explorer",
+					"icon": "media/dep.svg"
+				}
+			]
+		},
+		"views": {
+			"log-explorer": [
+				{
+					"id": "errorList",
+					"name": "Error List"
+				}
+			]
+		},
+		"languages": [
+			{
+			  "id": "ULS",
+			  "extensions": [".log"],
+			  "aliases": ["ULS", "uls"],
+			  "filenames": [],
+			  "firstLine": "^#!/.*\\bTimestamp\\b",
+			  "configuration": "./uls.language-configuration.json"
+			}
+		],
 		"commands": [
 			{
-				"command": "spectacles.helloWorld",
-				"title": "Hello World"
+				"command": "spectacles.trim",
+				"title": "Trim Log Lines"
+			},
+			{
+				"command": "errorList.goto",
+				"title": "Goto",
+				"icon": {
+				  "light": "resources/light/goto.svg",
+				  "dark": "resources/dark/goto.svg"
+				}
 			}
 		],
 		"grammars": [
 			{
-				"language": "log",
-				"scopeName": "text.spectacles.log",
-				"path": "./syntaxes/log.tmLanguage.json"
+				"language": "ULS",
+				"scopeName": "text.spectacles.uls",
+				"path": "./syntaxes/uls.tmLanguage.json"
 			}
 		]
 	},
