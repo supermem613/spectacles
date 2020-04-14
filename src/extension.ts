@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import DisposableCollection from "./DisposableCollection";
+import ErrorListProvider, { ErrorEntry } from "./ErrorListProvider";
 
 export function foldLines(foldLines: Array<number>) {
 	const textEditor = vscode.window.activeTextEditor;
@@ -40,7 +40,17 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "spectacles" is now active!');
 
-	let localDisposables = new DisposableCollection;
+	const errorListProvider = new ErrorListProvider();
+	vscode.window.registerTreeDataProvider('errorList', errorListProvider);
+	vscode.commands.registerCommand('errorList.refreshEntry', () => errorListProvider.refresh());
+	vscode.commands.registerCommand(
+		'errorList.goto',
+		 (node: ErrorEntry) => 
+		 {
+			
+
+			 vscode.window.showInformationMessage(`Successfully called edit entry on ${node.label}.`);
+		 });
 
 //	context.subscriptions.push(
 		// TODO(MEM);
@@ -49,7 +59,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	localDisposables.add(vscode.commands.registerCommand('spectacles.trim', () => {
+	context.subscriptions.push(vscode.commands.registerCommand('spectacles.trim', () => {
 		// The code you place here will be executed every time your command is executed
 
 		let array = Array<vscode.Range>();
@@ -83,8 +93,6 @@ export function activate(context: vscode.ExtensionContext) {
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Trim complete.');
 	}));
-
-	context.subscriptions.push(localDisposables);
 }
 
 // this method is called when your extension is deactivated
