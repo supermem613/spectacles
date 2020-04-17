@@ -49,14 +49,6 @@
 			{
 				"command": "spectacles.trim",
 				"title": "Trim Log Lines"
-			},
-			{
-				"command": "errorList.goto",
-				"title": "Goto",
-				"icon": {
-				  "light": "resources/light/goto.svg",
-				  "dark": "resources/dark/goto.svg"
-				}
 			}
 		],
 		"grammars": [
