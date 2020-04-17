@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import ErrorListProvider, { ErrorEntry } from "./ErrorListProvider";
+import SidebarProvider, { SidebarEntry } from "./SidebarProvider";
 
 export function foldLines(foldLines: Array<number>) {
 	const textEditor = vscode.window.activeTextEditor;
@@ -40,25 +40,20 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "spectacles" is now active!');
 
-	const errorListProvider = new ErrorListProvider();
-	vscode.window.registerTreeDataProvider('errorList', errorListProvider);
-	vscode.commands.registerCommand('errorList.refreshEntry', () => errorListProvider.refresh());
+	const sidebarProvider = new SidebarProvider();
+	vscode.window.registerTreeDataProvider('sidebar', sidebarProvider);
+	vscode.commands.registerCommand('sidebar.refreshEntry', () => sidebarProvider.refresh());
 	vscode.commands.registerCommand(
 		'errorList.goto',
-		 (node: ErrorEntry) => 
+		 (line: number) => 
 		 {
 			let editor = vscode.window.activeTextEditor;
 			if (editor)
 			{
-				editor.revealRange(new vscode.Range(node.line - 1, 0, node.line, 255));
+				editor.revealRange(new vscode.Range(line - 1, 0, line, 255));
 			}
-
-			vscode.window.showInformationMessage(`Successfully called edit entry on ${node.label}.`);
 		 });
-
-//	context.subscriptions.push(
-		// TODO(MEM);
-	//	vscode.languages.registerFoldingRangeProvider('ULS', new MyFoldingRangeProvider()));
+		
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
@@ -80,8 +75,6 @@ export function activate(context: vscode.ExtensionContext) {
 				if (!match || (match.length === 0))
 				{
 					array.push(line.rangeIncludingLineBreak);
-					//editor.selection = new vscode.Selection(i, 0, i, 0);
-					//vscode.commands.executeCommand('editor.fold');
 				}
 			}
 		
