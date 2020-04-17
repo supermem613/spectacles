@@ -12,7 +12,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onView:errorsList",
+		"onView:sidebar",
 		"onLanguage:ULS",
 		"onCommand:spectacles.trim"
 	],
@@ -30,8 +30,8 @@
 		"views": {
 			"spectacles": [
 				{
-					"id": "errorList",
-					"name": "Error List"
+					"id": "sidebar",
+					"name": "Sidebar"
 				}
 			]
 		},
