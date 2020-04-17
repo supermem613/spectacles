@@ -3,7 +3,7 @@
 	"publisher": "supermem613",
 	"displayName": "Spectacles",
 	"icon": "resources/spectacles-color.png",
-	"description": "Visualizer for Logs",
+	"description": "Visual Studio Code Extension for Log Analysis and Visualization of Microsoft ULS / Test Logs",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.44.0"
