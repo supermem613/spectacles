@@ -44,7 +44,7 @@ export function activate(context: vscode.ExtensionContext) {
 	vscode.window.registerTreeDataProvider('sidebar', sidebarProvider);
 	vscode.commands.registerCommand('sidebar.refreshEntry', () => sidebarProvider.refresh());
 	vscode.commands.registerCommand(
-		'errorList.goto',
+		'sidebar.gotoLine',
 		 (line: number) => 
 		 {
 			let editor = vscode.window.activeTextEditor;

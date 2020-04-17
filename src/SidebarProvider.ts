@@ -7,11 +7,15 @@ enum SidebarEntryType {
 }
 
 export default class SidebarProvider implements vscode.TreeDataProvider<SidebarEntry> {
-
 	private _onDidChangeTreeData: vscode.EventEmitter<SidebarEntry | undefined> = new vscode.EventEmitter<SidebarEntry | undefined>();
 	readonly onDidChangeTreeData: vscode.Event<SidebarEntry | undefined> = this._onDidChangeTreeData.event;
 
+	private _errorList: Array<SidebarEntry>;
+	private _parsed : boolean;
+
 	constructor() {
+		this._parsed = false;
+		this._errorList = new Array<SidebarEntry>(); 
 	}
 
 	refresh(): void {
@@ -28,13 +32,17 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 		}
 
 		if (element.type === SidebarEntryType.ErrorList) {
-			return Promise.resolve(this.getErrorList());
+			return Promise.resolve(this._errorList);
 		}
 
 		return Promise.resolve([]);
 	}
 
 	private getRootElements(): SidebarEntry[] {
+		if (!this._parsed) {
+			this.parseLog();
+		}
+
 		let entries = Array<SidebarEntry>();
 
 		entries.push(new SidebarEntry(
@@ -51,38 +59,38 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 
 		return entries;
 	}
-
-	private getErrorList(): SidebarEntry[] {
-        let errors = Array<SidebarEntry>();
-
-        let editor = vscode.window.activeTextEditor;
+		
+	private parseLog() {
+		let editor = vscode.window.activeTextEditor;
 		if (editor)
 		{
 			let lines = editor.document.lineCount;
 			for (var i = 0; i < lines; i++)
 			{
 				let line = editor.document.lineAt(i);
-				let match = line.text.match("\\bcsierr[_a-zA-Z]*\\b|\\bcellerr[_a-zA-Z]*\\b");
 
-				if (match)
+				// Processing for the Error List
 				{
-					errors.push(
-                        new SidebarEntry(
-							SidebarEntryType.Error,
-                            match[0] + ' at ' + i,
-                            i,
-							vscode.TreeItemCollapsibleState.None,
-							{
-								command: 'errorList.goto',
-								title: '',
-								arguments: [i] 
-							},
-							path.join(__filename, '..', '..', 'resources', 'error.svg')));
+					let match = line.text.match("\\bcsierr[_a-zA-Z]*\\b|\\bcellerr[_a-zA-Z]*\\b");
+
+					if (match)
+					{
+						this._errorList.push(
+							new SidebarEntry(
+								SidebarEntryType.Error,
+								match[0] + ' at ' + i,
+								i,
+								vscode.TreeItemCollapsibleState.None,
+								{
+									command: 'sidebar.gotoLine',
+									title: '',
+									arguments: [i] 
+								},
+								path.join(__filename, '..', '..', 'resources', 'error.svg')));
+					}
 				}
 			}
         }
-        
-        return errors;
     }
 }
 
