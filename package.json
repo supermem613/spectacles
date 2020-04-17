@@ -2,7 +2,7 @@
 	"name": "spectacles",
 	"publisher": "supermem613",
 	"displayName": "Spectacles",
-	"icon": "resources/spectacles-color.svg",
+	"icon": "resources/spectacles-color.png",
 	"description": "Visualizer for Logs",
 	"version": "0.0.1",
 	"engines": {
