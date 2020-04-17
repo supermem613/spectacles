@@ -1,7 +1,8 @@
 {
 	"name": "spectacles",
 	"publisher": "supermem613",
-	"displayName": "spectacles",
+	"displayName": "Spectacles",
+	"icon": "resources/spectacles-color.svg",
 	"description": "Visualizer for Logs",
 	"version": "0.0.1",
 	"engines": {
@@ -20,14 +21,14 @@
 		"viewsContainers": {
 			"activitybar": [
 				{
-					"id": "log-explorer",
-					"title": "Log Explorer",
-					"icon": "media/dep.svg"
+					"id": "spectacles",
+					"title": "Spectacles",
+					"icon": "resources/spectacles.svg"
 				}
 			]
 		},
 		"views": {
-			"log-explorer": [
+			"spectacles": [
 				{
 					"id": "errorList",
 					"name": "Error List"
