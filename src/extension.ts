@@ -47,9 +47,13 @@ export function activate(context: vscode.ExtensionContext) {
 		'errorList.goto',
 		 (node: ErrorEntry) => 
 		 {
-			
+			let editor = vscode.window.activeTextEditor;
+			if (editor)
+			{
+				editor.revealRange(new vscode.Range(node.line - 1, 0, node.line, 255));
+			}
 
-			 vscode.window.showInformationMessage(`Successfully called edit entry on ${node.label}.`);
+			vscode.window.showInformationMessage(`Successfully called edit entry on ${node.label}.`);
 		 });
 
 //	context.subscriptions.push(
