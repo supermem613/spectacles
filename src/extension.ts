@@ -3,36 +3,6 @@
 import * as vscode from 'vscode';
 import SidebarProvider, { SidebarEntry } from "./SidebarProvider";
 
-export function foldLines(foldLines: Array<number>) {
-	const textEditor = vscode.window.activeTextEditor;
-	if (!textEditor)
-	{
-		return;
-	}
-	const selection = textEditor.selection;
-  
-	for (const lineNumber of foldLines) {
-	  textEditor.selection = new vscode.Selection(lineNumber, 0, lineNumber, 0);
-	  vscode.commands.executeCommand('editor.fold');
-	  console.log('folding ' + textEditor.selection.anchor.line);
-	}
-	textEditor.selection = selection;
-	textEditor.revealRange(textEditor.selection, vscode.TextEditorRevealType.InCenter);
-  }
-
-class MyFoldingRangeProvider implements vscode.FoldingRangeProvider {
-provideFoldingRanges(document: vscode.TextDocument, context: vscode.FoldingContext, token: vscode.CancellationToken): vscode.FoldingRange[] {
-	let ranges = Array<vscode.FoldingRange>();
-
-	for (var i = 0; i < document.lineCount - 1; i ++)
-	{
-		ranges.push(new vscode.FoldingRange(i, i + 1, vscode.FoldingRangeKind.Comment));
-	}
-
-	return ranges;
-}
-}
-
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -84,8 +54,6 @@ export function activate(context: vscode.ExtensionContext) {
 					edit.delete(array[i]);
 				}});
 		}
-
-		//foldLines(array);
 
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Trim complete.');
