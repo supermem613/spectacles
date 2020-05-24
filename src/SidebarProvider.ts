@@ -101,13 +101,15 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 		if (editor)
 		{
 			let lines = editor.document.lineCount;
+			const errorRegex = vscode.workspace.getConfiguration('spectacles').get('errorRegex', '\\bcsierr[_a-zA-Z]*\\b|\\bcellerr[_a-zA-Z]*\\b');
 			for (var i = 0; i < lines; i++)
 			{
 				let line = editor.document.lineAt(i);
 
 				// Processing for the Error List
+				if (errorRegex)
 				{
-					let match = line.text.match("\\bcsierr[_a-zA-Z]*\\b|\\bcellerr[_a-zA-Z]*\\b");
+					let match = line.text.match(errorRegex);
 
 					if (match)
 					{

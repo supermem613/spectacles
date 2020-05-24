@@ -61,6 +61,20 @@
 				"scopeName": "text.spectacles.uls",
 				"path": "./syntaxes/uls.tmLanguage.json"
 			}
+		],
+		"configuration": [
+			{
+				"title" : "Spectacles",
+				"properties" :
+				{
+					"spectacles.errorRegex" : 
+					{
+						"type" : "string",
+						"default" : null,
+						"description": "Regular expression used to match errors in the log."
+					}
+				}
+			}
 		]
 	},
 	"scripts": {
