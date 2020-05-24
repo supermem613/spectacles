@@ -48,8 +48,8 @@ jobs:
           files: '${{github.workspace}}/package.json'
           patch-syntax: |
             = /version => "${{ steps.gitversion.outputs.semVer }}"
-            = /displayName => "VSIX Viewer"
-            = /description => "A simple viewer for VSIX files, which lets you see the contents of VSIX files within Visual Studio Code."
+            = /displayName => "spectacles"
+            = /description => "Visual Studio Code Extension for Log Analysis and Visualization"
       
       - name: add version in CHANGELOG.md
         uses: cschleiden/replace-tokens@v1.0
@@ -59,7 +59,7 @@ jobs:
           VERSION: "${{ steps.gitversion.outputs.semVer }}"
 
       - name: compile and create vsix
-        run: npm run package
+        run: vsce package
 
       - name: print vsix path
         run: |
@@ -68,5 +68,5 @@ jobs:
       - name: upload vsix as artifact
         uses: actions/upload-artifact@v1
         with:
-          name: vsix-viewer-${{steps.gitversion.outputs.semVer}}.vsix
+          name: spectacles-${{steps.gitversion.outputs.semVer}}.vsix
           path: ${{github.workspace}}/vsix-viewer-${{steps.gitversion.outputs.semVer}}.vsix
