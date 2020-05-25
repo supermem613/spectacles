@@ -1,0 +1,461 @@
+10/15/2014 22:33:19.940	11940	15132	CSI Logging	ttidLogStartupShutdown	5	Information	CSI Version: 16.0.3413.1000		
+10/15/2014 22:33:19.940	11940	15132	CSI Logging	ttidLogStartupShutdown	5	Information	Office Image: Ship, Architecture: x86		
+10/15/2014 22:33:19.940	11940	15132	CSI Logging	ttidLogStartupShutdown	5	Information	CsiApplicationContext: 8		
+10/15/2014 22:33:19.956	11940	15132	CSI Logging	ttidLogCacheRecovery	5	Information	Activating fault domain {C48FC055-1FC3-4E00-8574-E2ACF0C5AD1C}.		
+10/15/2014 22:33:19.956	11940	15132	CSI Logging	ttidLogCacheRecovery	5	Information	No faults found for fault domain ID {C48FC055-1FC3-4E00-8574-E2ACF0C5AD1C}.		
+10/15/2014 22:33:19.957	11940	15132	CSI Logging	ttidLogContext	5	Information	>CProcessList::Init(001)		
+10/15/2014 22:33:21.040	11940	15132	CSI Logging	ttidLogCentralTableDB	5	Information	Schema version is 280, should be 281		
+10/15/2014 22:33:21.040	11940	15132	CSI Logging	0	9	None		{1B3E0000-000F-0000-0000-000032003800}	
+10/15/2014 22:33:21.040	11940	15132	CSI Logging	ttidLogCentralTable	5	Information	Begin CentralTable 281 upgrade from 280.		
+10/15/2014 22:33:21.513	11940	15132	CSI Logging	ttidLogCentralTableDB	5	Information	Schema upgrade to version '281' succeeded		
+10/15/2014 22:33:21.514	11940	15132	CSI Logging	:	9	None	0x119	{1B3E0000-000F-0000-0000-000048005200}	
+10/15/2014 22:33:21.514	11940	15132	CSI Logging	ttidLogCentralTableDB	5	Information	Schema upgrade succeeded		
+10/15/2014 22:33:21.514	11940	15132	CSI Logging	0	9	None		{1B3E0000-000F-0000-0000-000032003800}	
+10/15/2014 22:33:21.514	11940	15132	CSI Logging	4	9	None		{1B610000-000F-0000-0000-000034003700}	
+10/15/2014 22:33:21.514	11940	15132	CSI Logging	48	9	None		{1B610000-000F-0000-0000-000031003500}	
+10/15/2014 22:33:21.514	11940	15132	CSI Logging	ttidLogCentralTableDB	5	Information	[880287.990049] 1548		
+10/15/2014 22:33:21.519	11940	15132	CSI Logging	ttidLogCentralTableDB	5	Information	Initialized CentralTableCollection		
+10/15/2014 22:33:21.522	11940	15132	CSI Logging	ttidLogCacheRecovery	5	Information	Activating fault domain {F01C8BAE-D431-4F32-90D4-F8AF502EB409}.		
+10/15/2014 22:33:21.522	11940	15132	CSI Logging	ttidLogCacheRecovery	5	Information	No faults found for fault domain ID {F01C8BAE-D431-4F32-90D4-F8AF502EB409}.		
+10/15/2014 22:33:21.522	11940	15132	CSI Logging	ttidLogCacheRecovery	5	Information	Activating fault domain {FE6DA22A-499D-401C-BBA3-761F75A560D9}.		
+10/15/2014 22:33:21.522	11940	15132	CSI Logging	ttidLogCacheRecovery	5	Information	No faults found for fault domain ID {FE6DA22A-499D-401C-BBA3-761F75A560D9}.		
+10/15/2014 22:33:21.523	11940	15132	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(004)		
+10/15/2014 22:33:21.523	11940	15132	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfoj]		
+10/15/2014 22:33:21.524	11940	15132	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(005)		
+10/15/2014 22:33:21.524	11940	15132	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfoj]		
+10/15/2014 22:33:21.525	11940	9408	CSI Logging	ttidLogCredStore	4	Warning	FConnectToClient is pending asynchronous completion		
+10/15/2014 22:33:21.525	11940	15132	CSI Logging	ttidSyncScheduler	5	Information	RequestFrequency:powermode Registered event handler 0x0x008B5CD0 with event mask 0xTpPowerMode(m_ePowerSource=7,m_fApplicationIdle=1,m_fSystemPreparingToSleep=1,m_fMonitorOff=1,m_ePowerScheme=0,m_fAppResponsive=0,m_fAwayMode=0,m_fRunIdleTasks=0)		
+10/15/2014 22:33:21.525	11940	15132	CSI Logging	71	9	None		{1B610000-000F-0000-0000-000031003500}	
+10/15/2014 22:33:21.526	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Sync Scheduler woken up		
+10/15/2014 22:33:21.527	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:33:21.544	11940	15716	CSI Logging	ttidSyncScheduler	5	Information	RequestFrequency:powermode changed, PresenceAndPowerStatus(m_fMachineIdle=False,m_fApplicationIdle=False,m_fPowerSourceAC=True,m_fHasBeenSet=False) to PresenceAndPowerStatus(m_fMachineIdle=False,m_fApplicationIdle=False,m_fPowerSourceAC=True,m_fHasBeenSet=True)		
+10/15/2014 22:33:21.669	11940	15132	CSI Logging	22	9	None		{1B610000-000F-0000-0000-000031003700}	
+10/15/2014 22:33:21.697	11940	16364	CSI Logging	ttidLogContext	5	Information	>Upload Requests Scheduler(008)		
+10/15/2014 22:33:21.719	11940	16364	CSI Logging	ttidLogContext	5	Information	>Release Lock Requests Scheduler(009)		
+10/15/2014 22:33:21.724	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(00F)		
+10/15/2014 22:33:21.724	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:33:21.724	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(010)		
+10/15/2014 22:33:21.724	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:33:21.728	11940	16364	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:33:21.728	11940	16364	CSI Logging	ttidLogContext	5	Information	---->Cache File Sync Controller(003)		
+10/15/2014 22:33:21.728	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(011)		
+10/15/2014 22:33:21.728	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfm5]		
+10/15/2014 22:33:21.728	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	Created LockOrCoauth request with id {F6B8C163-EEC5-4467-81F5-69059FA96E09}		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	Created LockOrCoauth request with id {0BC31230-5B1B-4F5D-B6E4-22F4A49E6938}		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	register ReleaseLock request for file {4E80128D-81AF-484C-8654-52615EC7BE41}		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(012)		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfm5]		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogContext	5	Information	>Release Lock Requests Scheduler(009)		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(013)		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(014)		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:33:21.729	11940	16364	CSI Logging	ttidLogContext	5	Information	---->Cache File Sync Controller(003)		
+10/15/2014 22:33:21.730	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(015)		
+10/15/2014 22:33:21.730	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfm5]		
+10/15/2014 22:33:21.730	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	Created LockOrCoauth request with id {21F49229-15E4-4917-894A-2F1B612E9D15}		
+10/15/2014 22:33:21.730	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	Created LockOrCoauth request with id {1E35D449-EA84-4269-8F08-44F1A912723B}		
+10/15/2014 22:33:21.730	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	register ReleaseLock request for file {7B6B51A6-86C2-491D-8D54-99148C50EDF4}		
+10/15/2014 22:33:21.730	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(016)		
+10/15/2014 22:33:21.730	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfm5]		
+10/15/2014 22:33:21.730	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(017)		
+10/15/2014 22:33:21.730	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfln]		
+10/15/2014 22:33:21.783	11940	16364	CSI Logging	ttidLogContext	5	Information	>Prioritized Sync Requests Scheduler(00E)		
+10/15/2014 22:33:21.783	11940	16364	CSI Logging	ttidLogContext	5	Information	>Prioritized Sync Requests Scheduler(00E)		
+10/15/2014 22:33:21.784	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	----HandleFileWithSyncRequest: checkin in syncing, shouldSync=True ID={4E80128D-81AF-484C-8654-52615EC7BE41}		
+10/15/2014 22:33:21.784	11940	16364	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:33:21.784	11940	16364	CSI Logging	ttidLogContext	5	Information	---->Cache File Sync Controller(003)		
+10/15/2014 22:33:21.803	11940	16364	CSI Logging	ttidLogContext	5	Information	>Prioritized Sync Requests Scheduler(00E)		
+10/15/2014 22:33:21.824	11940	16364	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:21.824	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(019)		
+10/15/2014 22:33:21.824	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayflr]		
+10/15/2014 22:33:21.824	11940	16364	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:21.824	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(01A)		
+10/15/2014 22:33:21.824	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayflr]		
+10/15/2014 22:33:21.824	11940	16364	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:21.825	11940	16364	CSI Logging	ttidLogContext	5	Information	>Prioritized Sync Requests Scheduler(00E)		
+10/15/2014 22:33:21.825	11940	16364	CSI Logging	ttidLogContext	5	Information	>Prioritized Sync Requests Scheduler(00E)		
+10/15/2014 22:33:21.825	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	----HandleFileWithSyncRequest: checkin in syncing, shouldSync=True ID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}		
+10/15/2014 22:33:21.825	11940	16364	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:33:21.825	11940	16364	CSI Logging	ttidLogContext	5	Information	---->Cache File Sync Controller(003)		
+10/15/2014 22:33:21.826	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	Async file sync thread for url=https://msft.spoppe.com/teams/ppturl002.pptx - begin		
+10/15/2014 22:33:21.840	11940	15676	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:21.840	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	----Request added to batch requestID={F6B8C163-EEC5-4467-81F5-69059FA96E09}, type=Coauthoring, subType=2		
+10/15/2014 22:33:21.840	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	----Request added to batch requestID={0BC31230-5B1B-4F5D-B6E4-22F4A49E6938}, type=SchemaLock, subType=2		
+10/15/2014 22:33:21.840	11940	16364	CSI Logging	ttidLogContext	5	Information	>Prioritized Sync Requests Scheduler(00E)		
+10/15/2014 22:33:21.841	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(01D)		
+10/15/2014 22:33:21.841	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayflw]		
+10/15/2014 22:33:21.841	11940	16364	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:21.841	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(01F)		
+10/15/2014 22:33:21.841	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayflw]		
+10/15/2014 22:33:21.841	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(020)		
+10/15/2014 22:33:21.841	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayflr]		
+10/15/2014 22:33:21.841	11940	16364	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:21.841	11940	16364	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(021)		
+10/15/2014 22:33:21.841	11940	16364	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayflr]		
+10/15/2014 22:33:21.841	11940	16364	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:21.844	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	Async file sync thread for url=https://msft.spoppe.com/teams/ppturl003.pptx - begin		
+10/15/2014 22:33:21.844	11940	11596	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:21.845	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	----Request added to batch requestID={21F49229-15E4-4917-894A-2F1B612E9D15}, type=Coauthoring, subType=2		
+10/15/2014 22:33:21.845	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	----Request added to batch requestID={1E35D449-EA84-4269-8F08-44F1A912723B}, type=SchemaLock, subType=2		
+10/15/2014 22:33:21.845	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(024)		
+10/15/2014 22:33:21.845	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayflw]		
+10/15/2014 22:33:21.845	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(025)		
+10/15/2014 22:33:21.845	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayflw]		
+10/15/2014 22:33:24.439	11940	14252	CSI Logging	ttidSyncScheduler	5	Information	RequestFrequency:powermode changed, PresenceAndPowerStatus(m_fMachineIdle=False,m_fApplicationIdle=False,m_fPowerSourceAC=True,m_fHasBeenSet=True) to PresenceAndPowerStatus(m_fMachineIdle=True,m_fApplicationIdle=False,m_fPowerSourceAC=True,m_fHasBeenSet=True)		
+10/15/2014 22:33:27.800	11940	5456	CSI Logging	ttidSyncScheduler	5	Information	RequestFrequency:powermode changed, PresenceAndPowerStatus(m_fMachineIdle=True,m_fApplicationIdle=False,m_fPowerSourceAC=True,m_fHasBeenSet=True) to PresenceAndPowerStatus(m_fMachineIdle=False,m_fApplicationIdle=False,m_fPowerSourceAC=True,m_fHasBeenSet=True)		
+10/15/2014 22:33:42.071	11940	11596	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:33:42.071	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Cache File Sync Controller(003)		
+10/15/2014 22:33:42.072	11940	11596	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:42.072	11940	11596	CSI Logging	ttidLogContext	5	Information	---->For requestID={21F49229-15E4-4917-894A-2F1B612E9D15}, type=Coauthoring(023)		
+10/15/2014 22:33:42.072	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(026)		
+10/15/2014 22:33:42.073	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayflw]		
+10/15/2014 22:33:42.073	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(027)		
+10/15/2014 22:33:42.073	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayflw]		
+10/15/2014 22:33:42.075	11940	11596	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:33:42.076	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Cache File Sync Controller(003)		
+10/15/2014 22:33:42.076	11940	11596	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:42.076	11940	11596	CSI Logging	ttidLogContext	5	Information	---->For requestID={1E35D449-EA84-4269-8F08-44F1A912723B}, type=SchemaLock(022)		
+10/15/2014 22:33:42.081	11940	15676	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:33:42.081	11940	15676	CSI Logging	ttidLogContext	5	Information	---->Cache File Sync Controller(003)		
+10/15/2014 22:33:42.082	11940	15676	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:42.082	11940	15676	CSI Logging	ttidLogContext	5	Information	---->For requestID={F6B8C163-EEC5-4467-81F5-69059FA96E09}, type=Coauthoring(01C)		
+10/15/2014 22:33:42.082	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(028)		
+10/15/2014 22:33:42.082	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayflw]		
+10/15/2014 22:33:42.082	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(029)		
+10/15/2014 22:33:42.082	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayflw]		
+10/15/2014 22:33:42.083	11940	15676	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:33:42.083	11940	15676	CSI Logging	ttidLogContext	5	Information	---->Cache File Sync Controller(003)		
+10/15/2014 22:33:42.083	11940	15676	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:42.083	11940	15676	CSI Logging	ttidLogContext	5	Information	---->For requestID={0BC31230-5B1B-4F5D-B6E4-22F4A49E6938}, type=SchemaLock(01B)		
+10/15/2014 22:33:42.097	11940	11596	CSI Logging	ttidLogWebServiceRequests	5	Information	WebService correlation id generated: {9B1310EC-DD12-4D02-8735-181C88FDE173}	{9B1310EC-DD12-4D02-8735-181C88FDE173}	
+10/15/2014 22:33:42.097	11940	11596	CSI Logging	ttidLogWebServiceRequests	5	Information	WebService write request start, url as https://msft.spoppe.com/teams/ppturl003.pptx		
+10/15/2014 22:33:42.099	11940	15676	CSI Logging	ttidLogWebServiceRequests	5	Information	WebService correlation id generated: {8EB514DF-DD12-4D02-8735-181C88FDE173}	{8EB514DF-DD12-4D02-8735-181C88FDE173}	
+10/15/2014 22:33:42.099	11940	15676	CSI Logging	ttidLogWebServiceRequests	5	Information	WebService write request start, url as https://msft.spoppe.com/teams/ppturl002.pptx		
+10/15/2014 22:33:42.537	11940	11596	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:42.538	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	----CellStorage WebService response has server health score 0		
+10/15/2014 22:33:42.538	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Persisted Transaction Init(02A)		
+10/15/2014 22:33:42.538	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Starting Persisted transaction [ayfnt]		
+10/15/2014 22:33:42.538	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	Clear the ReleaseLock flags		
+10/15/2014 22:33:42.540	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(02B)		
+10/15/2014 22:33:42.540	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfnt]		
+10/15/2014 22:33:42.548	11940	15676	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:42.548	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	----CellStorage WebService response has server health score 0		
+10/15/2014 22:33:42.548	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Persisted Transaction Init(02C)		
+10/15/2014 22:33:42.548	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Starting Persisted transaction [ayfnt]		
+10/15/2014 22:33:42.548	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	Clear the ReleaseLock flags		
+10/15/2014 22:33:42.570	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(02D)		
+10/15/2014 22:33:42.570	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfnt]		
+10/15/2014 22:33:42.571	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(02B)		
+10/15/2014 22:33:42.572	11940	11596	CSI Logging	ttidLogCentralTableDB	5	Information	----Incrementing revision column on row to 192		
+10/15/2014 22:33:42.575	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(02E)		
+10/15/2014 22:33:42.575	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfnu]		
+10/15/2014 22:33:42.576	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	RequestFrequency:updating because server health changed		
+10/15/2014 22:33:42.576	11940	11596	CSI Logging	ttidLogCoAuth	5	Information	Server health score: 0; Document State: InActive; Background download sync interval updated to 300000		
+10/15/2014 22:33:42.576	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	Triggering Sync for sync scheduler with runtime id {C2CB19E8-EC30-47B6-A5B1-0FD4B5189041}		
+10/15/2014 22:33:42.576	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Sync Scheduler woken up		
+10/15/2014 22:33:42.576	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(02F)		
+10/15/2014 22:33:42.576	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfnu]		
+10/15/2014 22:33:42.577	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(02F)		
+10/15/2014 22:33:42.577	11940	11596	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:42.577	11940	11596	CSI Logging	ttidLogContext	5	Information	---->For requestID={21F49229-15E4-4917-894A-2F1B612E9D15}, type=Coauthoring(023)		
+10/15/2014 22:33:42.577	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	--------Coauth request type ExitCoauthoring finish with result Success, Lock Status None, Coauth status None		
+10/15/2014 22:33:42.577	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(039)		
+10/15/2014 22:33:42.578	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfno]		
+10/15/2014 22:33:42.578	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Checking the database to see whether we have more work to do.		
+10/15/2014 22:33:42.578	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(03A)		
+10/15/2014 22:33:42.578	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfno]		
+10/15/2014 22:33:42.578	11940	11596	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:42.578	11940	11596	CSI Logging	ttidLogContext	5	Information	---->For requestID={1E35D449-EA84-4269-8F08-44F1A912723B}, type=SchemaLock(022)		
+10/15/2014 22:33:42.578	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	--------Schemalock request type ReleaseLock skipped; dependent request was processed		
+10/15/2014 22:33:42.605	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(02D)		
+10/15/2014 22:33:42.605	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(02D)		
+10/15/2014 22:33:42.605	11940	15676	CSI Logging	ttidLogCentralTableDB	5	Information	----Incrementing revision column on row to 1486		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(02D)		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(03C)		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfnu]		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	RequestFrequency:updating because server health changed		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogCoAuth	5	Information	Server health score: 0; Document State: InActive; Background download sync interval updated to 300000		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	Triggering Sync for sync scheduler with runtime id {C2CB19E8-EC30-47B6-A5B1-0FD4B5189041}		
+10/15/2014 22:33:42.607	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Sync Scheduler woken up		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(03D)		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfnu]		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(03D)		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(03D)		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidLogContext	5	Information	---->For requestID={F6B8C163-EEC5-4467-81F5-69059FA96E09}, type=Coauthoring(01C)		
+10/15/2014 22:33:42.607	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	--------Coauth request type ExitCoauthoring finish with result Success, Lock Status None, Coauth status None		
+10/15/2014 22:33:42.607	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Checking the database to see whether we have more work to do.		
+10/15/2014 22:33:42.633	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(049)		
+10/15/2014 22:33:42.633	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfno]		
+10/15/2014 22:33:42.633	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(04A)		
+10/15/2014 22:33:42.633	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfno]		
+10/15/2014 22:33:42.633	11940	15676	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:42.633	11940	15676	CSI Logging	ttidLogContext	5	Information	---->For requestID={0BC31230-5B1B-4F5D-B6E4-22F4A49E6938}, type=SchemaLock(01B)		
+10/15/2014 22:33:42.633	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	--------Schemalock request type ReleaseLock skipped; dependent request was processed		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	----CAsyncFileSyncOp: FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}, URL=https://msft.spoppe.com/teams/ppturl003.pptx -- Transition=Syncing->Finished -- COAUTH -- RequestID {1E35D449-EA84-4269-8F08-44F1A912723B}, RequestType SchemaLock, SchemaLockRequestType ReleaseLock, RequestStatus Finishing, RequestResult Warning: csiwrnWebService_DependentRequestWasSupported ;; RequestID {21F49229-15E4-4917-894A-2F1B612E9D15}, RequestType Coauthoring, SchemaLockRequestType ExitCoauthoring, RequestStatus Finishing, RequestResult Success ;; 		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(051)		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfls]		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	Remove runtime bucket		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl003.pptx; FID={7B6B51A6-86C2-491D-8D54-99148C50EDF4}(01E)		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(052)		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfls]		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(052)		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(053)		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6z]		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	Remove request bucket for requestID={21F49229-15E4-4917-894A-2F1B612E9D15}		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	Remove request bucket for requestID={1E35D449-EA84-4269-8F08-44F1A912723B}		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(054)		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6z]		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(055)		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye61]		
+10/15/2014 22:33:42.635	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	Remove runtime bucket		
+10/15/2014 22:33:42.636	11940	11596	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(056)		
+10/15/2014 22:33:42.636	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye61]		
+10/15/2014 22:33:42.636	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	Triggering Sync for sync scheduler with runtime id {C2CB19E8-EC30-47B6-A5B1-0FD4B5189041}		
+10/15/2014 22:33:42.636	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Sync Scheduler woken up		
+10/15/2014 22:33:42.636	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	Async file sync thread for url=https://msft.spoppe.com/teams/ppturl003.pptx - end		
+10/15/2014 22:33:42.636	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Checking the database to see whether we have more work to do.		
+10/15/2014 22:33:42.653	11940	15676	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:42.653	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	----CAsyncFileSyncOp: FID={4E80128D-81AF-484C-8654-52615EC7BE41}, URL=https://msft.spoppe.com/teams/ppturl002.pptx -- Transition=Syncing->Finished -- COAUTH -- RequestID {0BC31230-5B1B-4F5D-B6E4-22F4A49E6938}, RequestType SchemaLock, SchemaLockRequestType ReleaseLock, RequestStatus Finishing, RequestResult Warning: csiwrnWebService_DependentRequestWasSupported ;; RequestID {F6B8C163-EEC5-4467-81F5-69059FA96E09}, RequestType Coauthoring, SchemaLockRequestType ExitCoauthoring, RequestStatus Finishing, RequestResult Success ;; 		
+10/15/2014 22:33:42.653	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(067)		
+10/15/2014 22:33:42.653	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [ayfls]		
+10/15/2014 22:33:42.653	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	Remove runtime bucket		
+10/15/2014 22:33:42.653	11940	15676	CSI Logging	ttidLogContext	5	Information	>Sync Start for URL=https://msft.spoppe.com/teams/ppturl002.pptx; FID={4E80128D-81AF-484C-8654-52615EC7BE41}(018)		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(068)		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [ayfls]		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(069)		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6z]		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	Remove request bucket for requestID={F6B8C163-EEC5-4467-81F5-69059FA96E09}		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	Remove request bucket for requestID={0BC31230-5B1B-4F5D-B6E4-22F4A49E6938}		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(06A)		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6z]		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(06B)		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye61]		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	Remove runtime bucket		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(06C)		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye61]		
+10/15/2014 22:33:42.654	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	Triggering Sync for sync scheduler with runtime id {C2CB19E8-EC30-47B6-A5B1-0FD4B5189041}		
+10/15/2014 22:33:42.654	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Sync Scheduler woken up		
+10/15/2014 22:33:42.655	11940	15676	CSI Logging	ttidSyncScheduler	5	Information	Async file sync thread for url=https://msft.spoppe.com/teams/ppturl002.pptx - end		
+10/15/2014 22:33:42.655	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Checking the database to see whether we have more work to do.		
+10/15/2014 22:33:42.655	11940	16364	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:33:42.655	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	----Sync scheduler is idle...resetting cached webservice channels		
+10/15/2014 22:33:49.405	11940	11596	CSI Logging	ttidSyncScheduler	5	Information	RequestFrequency:powermode changed, PresenceAndPowerStatus(m_fMachineIdle=False,m_fApplicationIdle=False,m_fPowerSourceAC=True,m_fHasBeenSet=True) to PresenceAndPowerStatus(m_fMachineIdle=False,m_fApplicationIdle=True,m_fPowerSourceAC=True,m_fHasBeenSet=True)		
+10/15/2014 22:34:27.920	11940	14252	CSI Logging	ttidSyncScheduler	5	Information	RequestFrequency:powermode changed, PresenceAndPowerStatus(m_fMachineIdle=False,m_fApplicationIdle=True,m_fPowerSourceAC=True,m_fHasBeenSet=True) to PresenceAndPowerStatus(m_fMachineIdle=True,m_fApplicationIdle=True,m_fPowerSourceAC=True,m_fHasBeenSet=True)		
+10/15/2014 22:36:01.152	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	Starting File Cache Scan.		
+10/15/2014 22:36:01.152	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	File Cache Scan for cache ID {181731DF-DD12-4D02-8735-181C88FDE173} and OneDrive ID GUID_NULL will start.		
+10/15/2014 22:36:01.152	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.198	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(076)		
+10/15/2014 22:36:01.198	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:36:01.198	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(077)		
+10/15/2014 22:36:01.198	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:36:01.211	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(078)		
+10/15/2014 22:36:01.211	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:36:01.211	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(079)		
+10/15/2014 22:36:01.211	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:36:01.224	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(07A)		
+10/15/2014 22:36:01.224	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:36:01.224	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(07B)		
+10/15/2014 22:36:01.224	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:36:01.237	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(07C)		
+10/15/2014 22:36:01.237	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:36:01.237	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(07D)		
+10/15/2014 22:36:01.237	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:36:01.250	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(07E)		
+10/15/2014 22:36:01.250	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:36:01.250	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(07F)		
+10/15/2014 22:36:01.250	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:36:01.259	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(080)		
+10/15/2014 22:36:01.259	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:36:01.259	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(081)		
+10/15/2014 22:36:01.259	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:36:01.269	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(082)		
+10/15/2014 22:36:01.269	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:36:01.269	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(083)		
+10/15/2014 22:36:01.269	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:36:01.278	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Runtime Transaction Init(084)		
+10/15/2014 22:36:01.278	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Starting runtime transaction [aye6j]		
+10/15/2014 22:36:01.278	11940	6828	CSI Logging	ttidLogContext	5	Information	>Central Table Transaction Commit(085)		
+10/15/2014 22:36:01.278	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	----Committing transaction [aye6j]		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	[880106.990019] 0:8;4:8;8:0;11:170787728;		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	[880106.990021] 0:6;4:6;8:0;11:162792108;		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	[880106.990024] 0:2;4:2;8:0;11:7995620;		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	[880106.990028] 0:8;4:8;8:0;11:170787728;		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	[880249.990019] 17:3;8:1;16:1;24:1;25:1;31:1;		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	[880249.990021] 8:1;16:1;17:1;24:1;25:1;31:1;		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	[880249.990024] 17:2;		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	[880249.990028] 17:3;8:1;16:1;24:1;25:1;31:1;		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	Finished File Cache Scan.		
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	5-B841-4DD7-BD4B-29F8997E00DE}	9	None		{0032007B-0045-0045-3600-310042003500}	
+10/15/2014 22:36:01.279	11940	6828	CSI Logging	ttidLogCentralTable	5	Information	[880109.990036] 129		
+10/15/2014 22:43:43.017	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Sync Scheduler woken up		
+10/15/2014 22:43:43.019	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Checking the database to see whether we have more work to do.		
+10/15/2014 22:43:43.019	11940	16364	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:43:43.019	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	----Sync scheduler is idle...resetting cached webservice channels		
+10/15/2014 22:53:30.443	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:53:30.483	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:53:30.484	11940	6828	CSI Logging	ttidLogLocalSyncClient	5	Information	Evict Unused Subcaches		
+10/15/2014 22:53:30.486	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:53:30.487	11940	6828	CSI Logging	ttidLogCacheMaint	3	Error	The database size 0 Bytes is less than the minimum compaction size 209715200 Bytes		
+10/15/2014 22:53:30.487	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:53:30.489	11940	6828	CSI Logging	ttidLogGarbageCollect	5	Information	Starting full file store GC. fForce=False, fExhaustiveOrphanSearch=False		
+10/15/2014 22:53:30.489	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:30.489	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSD file: FSD-{06BCFDC1-A6B5-49EB-86A7-C1FA7019BE3A}.FSD		
+10/15/2014 22:53:30.497	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSD file: FSD-{4D069094-00FD-4118-B231-F447A682F585}.FSD		
+10/15/2014 22:53:30.501	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSD file: FSD-{6006F58A-E959-4D2E-8AAD-D3CBD71F73AE}.FSD		
+10/15/2014 22:53:30.505	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSD file: FSD-{7DF6987D-BF40-4526-95F4-80D2C735A072}.FSD		
+10/15/2014 22:53:30.509	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSD file: FSD-{8D589A87-4B3A-4BF7-86BB-9F3C51B24316}.FSD		
+10/15/2014 22:53:30.513	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----FSD-{8D589A87-4B3A-4BF7-86BB-9F3C51B24316}.FSD is marked as orphaned, attempting delete		
+10/15/2014 22:53:30.514	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSD file: FSD-{9800475D-45B0-495F-8454-CD4DAAAC68E3}.FSD		
+10/15/2014 22:53:30.514	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSD file: FSD-{A10859CB-C89A-4DB5-A8A7-6FB90406D7FD}.FSD		
+10/15/2014 22:53:30.519	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSD file: FSD-{D0C20B30-4DC8-4B26-B2F3-9E650B1F821D}.FSD		
+10/15/2014 22:53:30.519	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSD file: FSD-{EB322C4D-550C-43FB-8F0A-0B8DD2145678}.FSD		
+10/15/2014 22:53:30.523	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSF file: FSF-{3126431B-DCBF-4A55-80C1-63D0A3EA2001}.FSF		
+10/15/2014 22:53:30.524	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Performing GC on FSF-{3126431B-DCBF-4A55-80C1-63D0A3EA2001}.FSF		
+10/15/2014 22:53:30.524	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(090)		
+10/15/2014 22:53:30.533	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:30.533	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(090)		
+10/15/2014 22:53:30.535	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:30.535	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(090)		
+10/15/2014 22:53:30.560	11940	11596	CSI Logging	ttidLogContext	5	Information	-------->Hierarchy Deserialize(091)		
+10/15/2014 22:53:30.807	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:30.807	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(090)		
+10/15/2014 22:53:30.822	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Persisted Transaction Init(092)		
+10/15/2014 22:53:30.822	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Starting Persisted transaction [aye6e]		
+10/15/2014 22:53:30.823	11940	11596	CSI Logging	B-DCBF-4A55-80C1-63D0A3EA2001}	9	None		{0033007B-0031-0032-3600-340033003100}	
+10/15/2014 22:53:30.823	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Transaction Commit(093)		
+10/15/2014 22:53:30.823	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]		
+10/15/2014 22:53:30.834	11940	11596	CSI Logging	ttidLogCentralTableDB	5	Information	--------Incrementing revision column on row to 4791		
+10/15/2014 22:53:30.835	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSF file: FSF-{3737CBDD-B40E-4884-908A-DDDACA56471D}.FSF		
+10/15/2014 22:53:30.835	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Performing GC on FSF-{3737CBDD-B40E-4884-908A-DDDACA56471D}.FSF		
+10/15/2014 22:53:30.836	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(094)		
+10/15/2014 22:53:30.845	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:30.845	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(094)		
+10/15/2014 22:53:30.848	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:30.848	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(094)		
+10/15/2014 22:53:30.860	11940	11596	CSI Logging	ttidLogContext	5	Information	-------->Hierarchy Deserialize(095)		
+10/15/2014 22:53:31.112	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:31.112	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(094)		
+10/15/2014 22:53:31.122	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Persisted Transaction Init(096)		
+10/15/2014 22:53:31.123	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Starting Persisted transaction [aye6e]		
+10/15/2014 22:53:31.123	11940	11596	CSI Logging	D-B40E-4884-908A-DDDACA56471D}	9	None		{0033007B-0037-0033-3700-430042004400}	
+10/15/2014 22:53:31.123	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Transaction Commit(097)		
+10/15/2014 22:53:31.123	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]		
+10/15/2014 22:53:31.131	11940	11596	CSI Logging	ttidLogCentralTableDB	5	Information	--------Incrementing revision column on row to 91		
+10/15/2014 22:53:31.133	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSF file: FSF-{4E80128D-81AF-484C-8654-52615EC7BE41}.FSF		
+10/15/2014 22:53:31.133	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Performing GC on FSF-{4E80128D-81AF-484C-8654-52615EC7BE41}.FSF		
+10/15/2014 22:53:31.133	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(098)		
+10/15/2014 22:53:31.144	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:31.144	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(098)		
+10/15/2014 22:53:31.147	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:31.147	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(098)		
+10/15/2014 22:53:31.155	11940	11596	CSI Logging	ttidLogContext	5	Information	-------->Hierarchy Deserialize(099)		
+10/15/2014 22:53:31.409	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:31.409	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(098)		
+10/15/2014 22:53:31.422	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Persisted Transaction Init(09A)		
+10/15/2014 22:53:31.422	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Starting Persisted transaction [aye6e]		
+10/15/2014 22:53:31.423	11940	11596	CSI Logging	D-81AF-484C-8654-52615EC7BE41}	9	None		{0034007B-0045-0038-3000-310032003800}	
+10/15/2014 22:53:31.423	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Transaction Commit(09B)		
+10/15/2014 22:53:31.423	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]		
+10/15/2014 22:53:31.432	11940	11596	CSI Logging	ttidLogCentralTableDB	5	Information	--------Incrementing revision column on row to 1487		
+10/15/2014 22:53:31.433	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSF file: FSF-{7B6B51A6-86C2-491D-8D54-99148C50EDF4}.FSF		
+10/15/2014 22:53:31.433	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Performing GC on FSF-{7B6B51A6-86C2-491D-8D54-99148C50EDF4}.FSF		
+10/15/2014 22:53:31.434	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(09C)		
+10/15/2014 22:53:31.445	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:31.445	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(09C)		
+10/15/2014 22:53:31.448	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:31.448	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(09C)		
+10/15/2014 22:53:31.456	11940	11596	CSI Logging	ttidLogContext	5	Information	-------->Hierarchy Deserialize(09D)		
+10/15/2014 22:53:32.827	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:32.827	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(09C)		
+10/15/2014 22:53:32.873	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Persisted Transaction Init(09E)		
+10/15/2014 22:53:32.873	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Starting Persisted transaction [aye6e]		
+10/15/2014 22:53:32.874	11940	11596	CSI Logging	6-86C2-491D-8D54-99148C50EDF4}	9	None		{0037007B-0042-0036-4200-350031004100}	
+10/15/2014 22:53:32.874	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Transaction Commit(09F)		
+10/15/2014 22:53:32.874	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]		
+10/15/2014 22:53:32.883	11940	11596	CSI Logging	ttidLogCentralTableDB	5	Information	--------Incrementing revision column on row to 193		
+10/15/2014 22:53:32.884	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSF file: FSF-{B18DE21C-0B9C-4671-B478-908456798283}.FSF		
+10/15/2014 22:53:32.884	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Performing GC on FSF-{B18DE21C-0B9C-4671-B478-908456798283}.FSF		
+10/15/2014 22:53:32.885	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A0)		
+10/15/2014 22:53:32.901	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:32.901	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A0)		
+10/15/2014 22:53:32.910	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:32.910	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A0)		
+10/15/2014 22:53:32.935	11940	11596	CSI Logging	ttidLogContext	5	Information	-------->Hierarchy Deserialize(0A1)		
+10/15/2014 22:53:33.337	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:33.337	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A0)		
+10/15/2014 22:53:33.372	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Persisted Transaction Init(0A2)		
+10/15/2014 22:53:33.372	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Starting Persisted transaction [aye6e]		
+10/15/2014 22:53:33.374	11940	11596	CSI Logging	C-0B9C-4671-B478-908456798283}	9	None		{0042007B-0031-0038-4400-450032003100}	
+10/15/2014 22:53:33.374	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Transaction Commit(0A3)		
+10/15/2014 22:53:33.374	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]		
+10/15/2014 22:53:33.396	11940	11596	CSI Logging	ttidLogCentralTableDB	5	Information	--------Incrementing revision column on row to 3139		
+10/15/2014 22:53:33.397	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSF file: FSF-{BA3FE487-66BF-43E6-AE6E-67115ACA17E9}.FSF		
+10/15/2014 22:53:33.398	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Performing GC on FSF-{BA3FE487-66BF-43E6-AE6E-67115ACA17E9}.FSF		
+10/15/2014 22:53:33.398	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A4)		
+10/15/2014 22:53:33.413	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:33.413	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A4)		
+10/15/2014 22:53:33.416	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:33.416	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A4)		
+10/15/2014 22:53:33.569	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:33.569	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A4)		
+10/15/2014 22:53:33.581	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Persisted Transaction Init(0A6)		
+10/15/2014 22:53:33.581	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Starting Persisted transaction [aye6e]		
+10/15/2014 22:53:33.582	11940	11596	CSI Logging	7-66BF-43E6-AE6E-67115ACA17E9}	9	None		{0042007B-0041-0033-4600-450034003800}	
+10/15/2014 22:53:33.582	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Transaction Commit(0A7)		
+10/15/2014 22:53:33.582	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]		
+10/15/2014 22:53:33.590	11940	11596	CSI Logging	ttidLogCentralTableDB	5	Information	--------Incrementing revision column on row to 1844		
+10/15/2014 22:53:33.591	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSF file: FSF-{C67855E2-46D3-45FA-8350-48AE17C28564}.FSF		
+10/15/2014 22:53:33.591	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Performing GC on FSF-{C67855E2-46D3-45FA-8350-48AE17C28564}.FSF		
+10/15/2014 22:53:33.592	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A8)		
+10/15/2014 22:53:33.603	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:33.603	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A8)		
+10/15/2014 22:53:33.606	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:33.606	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A8)		
+10/15/2014 22:53:33.630	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:33.630	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0A8)		
+10/15/2014 22:53:33.647	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Persisted Transaction Init(0AA)		
+10/15/2014 22:53:33.647	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Starting Persisted transaction [aye6e]		
+10/15/2014 22:53:33.648	11940	11596	CSI Logging	2-46D3-45FA-8350-48AE17C28564}	9	None		{0043007B-0036-0037-3800-350035004500}	
+10/15/2014 22:53:33.648	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Transaction Commit(0AB)		
+10/15/2014 22:53:33.648	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]		
+10/15/2014 22:53:33.656	11940	11596	CSI Logging	ttidLogCentralTableDB	5	Information	--------Incrementing revision column on row to 36		
+10/15/2014 22:53:33.657	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Found FSF file: FSF-{E6A70C56-A8DA-4846-9400-4768ACB8D79C}.FSF		
+10/15/2014 22:53:33.658	11940	11596	CSI Logging	ttidLogGarbageCollect	5	Information	----Performing GC on FSF-{E6A70C56-A8DA-4846-9400-4768ACB8D79C}.FSF		
+10/15/2014 22:53:33.658	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0AC)		
+10/15/2014 22:53:33.668	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:33.668	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0AC)		
+10/15/2014 22:53:33.671	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:33.671	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0AC)		
+10/15/2014 22:53:33.682	11940	11596	CSI Logging	ttidLogContext	5	Information	-------->Hierarchy Deserialize(0AD)		
+10/15/2014 22:53:34.330	11940	11596	CSI Logging	ttidLogContext	5	Information	>CAsyncFileStoreGarbageCollect::OnDoTimeSlice(08F)		
+10/15/2014 22:53:34.330	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Csi::GarbageCollectCellStorageOnBlobHeap(0AC)		
+10/15/2014 22:53:34.342	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Persisted Transaction Init(0AE)		
+10/15/2014 22:53:34.342	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Starting Persisted transaction [aye6e]		
+10/15/2014 22:53:34.342	11940	11596	CSI Logging	6-A8DA-4846-9400-4768ACB8D79C}	9	None		{0045007B-0036-0041-3700-300043003500}	
+10/15/2014 22:53:34.342	11940	11596	CSI Logging	ttidLogContext	5	Information	---->Central Table Transaction Commit(0AF)		
+10/15/2014 22:53:34.342	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]		
+10/15/2014 22:53:34.350	11940	11596	CSI Logging	ttidLogCentralTableDB	5	Information	--------Incrementing revision column on row to 23		
+10/15/2014 22:53:34.352	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:53:34.354	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:53:34.356	11940	6828	CSI Logging	ttidLogCacheMaint	4	Warning	Could not find C:\INetCache		
+10/15/2014 22:53:34.357	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:53:34.358	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:53:34.360	11940	14656	CSI Logging	F-248D-4437-BC81-99993B5D905B}	9	None		{0030007B-0033-0036-4400-450037004300}	
+10/15/2014 22:53:43.375	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	Sync Scheduler woken up		
+10/15/2014 22:53:43.377	11940	16364	CSI Logging	ttidSyncScheduler	5	Error	Checking the database to see whether we have more work to do: csierrInvalidUrl is present
+10/15/2014 22:53:43.377	11940	16364	CSI Logging	ttidLogContext	5	Information	>Main Sync Scheduler(002)		
+10/15/2014 22:53:43.377	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	----Sync scheduler is idle...resetting cached webservice channels		
+10/15/2014 22:53:43.381	11940	16364	CSI Logging	ttidSyncScheduler	5	Information	----Sync scheduler has decided to exit MsoSync after exceeding the idle threshold.  Raising idle event.		

@@ -41,12 +41,17 @@
 		},
 		"languages": [
 			{
-			  "id": "ULS",
-			  "extensions": [".log"],
-			  "aliases": ["ULS", "uls"],
-			  "filenames": [],
-			  "firstLine": "^#!/.*\\bTimestamp\\b",
-			  "configuration": "./uls.language-configuration.json"
+				"id": "ULS",
+				"extensions": [
+					".log"
+				],
+				"aliases": [
+					"ULS",
+					"uls"
+				],
+				"filenames": [],
+				"firstLine": "^#!/.*\\bTimestamp\\b",
+				"configuration": "./uls.language-configuration.json"
 			}
 		],
 		"commands": [
@@ -64,13 +69,11 @@
 		],
 		"configuration": [
 			{
-				"title" : "Spectacles",
-				"properties" :
-				{
-					"spectacles.errorRegex" : 
-					{
-						"type" : "string",
-						"default" : null,
+				"title": "Spectacles",
+				"properties": {
+					"spectacles.errorRegex": {
+						"type": "string",
+						"default": null,
 						"description": "Regular expression used to match errors in the log."
 					}
 				}
@@ -86,16 +89,21 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.44.0",
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^7.0.2",
 		"@types/node": "^13.11.0",
-		"eslint": "^6.8.0",
-		"@typescript-eslint/parser": "^2.26.0",
+		"@types/vscode": "^1.44.0",
 		"@typescript-eslint/eslint-plugin": "^2.26.0",
+		"@typescript-eslint/parser": "^2.26.0",
+		"eslint": "^6.8.0",
+		"expect": "^26.0.1",
 		"glob": "^7.1.6",
-		"mocha": "^7.1.1",
+		"mocha": "^7.2.0",
+		"moment": "^2.26.0",
 		"typescript": "^3.8.3",
 		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"expect": "^26.0.1"
 	}
 }
