@@ -50,14 +50,14 @@ export class TimeIntervalManipulator {
             return undefined;
         }
 
-        const momentFrom = moment(matchFrom[0], "MM/DD/YYYY HH:mm:ss.x");
-        const momentTo = moment(matchTo[0], "MM/DD/YYYY HH:mm:ss.x");
+        const momentFrom = moment.utc(matchFrom[1], 'MM/DD/YYYY HH:mm:ss.SSS');
+        const momentTo = moment.utc(matchTo[1], 'MM/DD/YYYY HH:mm:ss.SSS');
 
         if (!momentFrom.isValid() || !momentTo.isValid()) {
             return undefined;
         }
 
-        const diff = momentTo.diff(momentFrom);
+        const diff = momentTo.diff(momentFrom, 'milliseconds');
 
         return moment.duration(diff);
     }
