@@ -14,28 +14,40 @@ export class TimeIntervalManipulator {
             text += Math.floor(duration.asDays()) + 'd';
         }
         
-        if (text !== '') {
-            text += ', ' + duration.hours() + 'h';
-        } else if (duration.hours() !== 0) {
-            text += duration.hours() + 'h';
+        if (duration.hours() !== 0) {
+            if (text !== '') {
+                text += ', ';
+            }
+            
+            text += Math.floor(duration.hours()) + 'h';
         }
 
-        if (text !== '') {
-            text += ', ' + duration.minutes() + 'min';
-        } else if (duration.minutes() !== 0) {
-            text += duration.minutes() + 'min';
+        if (duration.minutes() !== 0) {
+            if (text !== '') {
+                text += ', ';
+            }
+            
+            text += Math.floor(duration.minutes()) + 'min';
+        }
 
+        if (duration.seconds() !== 0) {
+            if (text !== '') {
+                text += ', ';
+            }
+            
+            text += Math.floor(duration.seconds()) + 's';
         }
-        if (text !== '') {
-            text += ', ' + duration.seconds() + 's';
-        } else if (duration.seconds() !== 0) {
-            text += duration.seconds() + 's';
+
+        if (duration.milliseconds() !== 0) {
+            if (text !== '') {
+                text += ', ';
+            }
+            
+            text += Math.floor(duration.milliseconds()) + 'ms';
         }
-        
-        if (text !== '') {
-            text += ', ' + duration.milliseconds() + 'ms';
-        } else {
-            text += duration.milliseconds() + 'ms';
+
+        if (text === '') {
+            text = '0ms';
         }
 
         return 'Selected Elapsed Time: ' + text;
