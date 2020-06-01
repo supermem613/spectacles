@@ -4,9 +4,8 @@ import * as moment from 'moment';
 import * as assert from 'assert';
 import { TimeIntervalManipulator, TimeIntervalController } from "../../timeInterval";
 
-suite('TimeInterval', () => {
-
-    test('Generates duration string (zero)".', () => {
+describe('TimeInterval', () => {
+    it('Generates duration string (zero)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ seconds: 0 });
         const expected = 'Selected Elapsed Time: ' + input.asMilliseconds() + 'ms';
@@ -16,7 +15,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (milliseconds)".', () => {
+    it('Generates duration string (milliseconds)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ seconds: 0 });
         const expected = 'Selected Elapsed Time: ' + input.asMilliseconds() + 'ms';
@@ -26,7 +25,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (seconds)".', () => {
+    it('Generates duration string (seconds)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ seconds: 42 });
         const expected = 'Selected Elapsed Time: ' + input.asSeconds() + 's';
@@ -36,7 +35,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (minutes)".', () => {
+    it('Generates duration string (minutes)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ minutes: 42 });
         const expected = 'Selected Elapsed Time: ' + input.asMinutes() + 'min';
@@ -46,7 +45,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (hours)".', () => {
+    it('Generates duration string (hours)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ hours: 11 });
         const expected = 'Selected Elapsed Time: ' + input.asHours() + 'h';
@@ -56,7 +55,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (days)".', () => {
+    it('Generates duration string (days)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ days: 11 });
         const expected = 'Selected Elapsed Time: ' + input.asDays() + 'd';
@@ -66,7 +65,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (milliseconds + seconds)".', () => {
+    it('Generates duration string (milliseconds + seconds)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ seconds: 10, milliseconds: 13 });
         const expected = 'Selected Elapsed Time: ' + input.seconds() + 's, ' + input.milliseconds() + 'ms';
@@ -76,7 +75,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (milliseconds + seconds + minutes)".', () => {
+    it('Generates duration string (milliseconds + seconds + minutes)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ minutes: 32, seconds: 10, milliseconds: 13 });
         const expected = 'Selected Elapsed Time: ' + input.minutes() + 'min, ' + input.seconds() + 's, ' + input.milliseconds() + 'ms';
@@ -86,7 +85,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (milliseconds + minutes)".', () => {
+    it('Generates duration string (milliseconds + minutes)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ minutes: 32, milliseconds: 13 });
         const expected = 'Selected Elapsed Time: ' + input.minutes() + 'min, ' + input.milliseconds() + 'ms';
@@ -96,7 +95,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (milliseconds + seconds + minutes + hours)".', () => {
+    it('Generates duration string (milliseconds + seconds + minutes + hours)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ hours:7, minutes: 32, seconds: 10, milliseconds: 13 });
         const expected = 'Selected Elapsed Time: ' + input.hours() + 'h, ' + input.minutes() + 'min, ' + input.seconds() + 's, ' + input.milliseconds() + 'ms';
@@ -106,7 +105,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (milliseconds + hours)".', () => {
+    it('Generates duration string (milliseconds + hours)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ hours: 3, milliseconds: 13 });
         const expected = 'Selected Elapsed Time: ' + input.hours() + 'h, ' + input.milliseconds() + 'ms';
@@ -116,7 +115,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (milliseconds + seconds + minutes + hours + days)".', () => {
+    it('Generates duration string (milliseconds + seconds + minutes + hours + days)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ days:3, hours:7, minutes: 32, seconds: 10, milliseconds: 13 });
         const expected = 'Selected Elapsed Time: ' + input.days() + 'd, ' + input.hours() + 'h, ' + input.minutes() + 'min, ' + input.seconds() + 's, ' + input.milliseconds() + 'ms';
@@ -126,7 +125,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Generates duration string (many days)".', () => {
+    it('Generates duration string (many days)".', () => {
         let testObject = new TimeIntervalManipulator();
         const input = moment.duration({ years: 2 });
         const expected = 'Selected Elapsed Time: ' + input.asDays() + 'd';
@@ -136,7 +135,7 @@ suite('TimeInterval', () => {
         assert.equal(expected, result);
     });
 
-    test('Calculates duration from ULS log (milliseconds)', () => {
+    it('Calculates duration from ULS log (milliseconds)', () => {
         let testObject = new TimeIntervalManipulator();
 
         const firstLine = '10/15/2014 22:53:33.648	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]';
@@ -149,7 +148,7 @@ suite('TimeInterval', () => {
         assert.equal(expected.asMilliseconds(), result?.asMilliseconds());
     });
 
-    test('Calculates duration from ULS log (seconds)', () => {
+    it('Calculates duration from ULS log (seconds)', () => {
         let testObject = new TimeIntervalManipulator();
 
         const firstLine = '10/15/2014 22:53:33.648	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]';
@@ -162,7 +161,7 @@ suite('TimeInterval', () => {
         assert.equal(expected.asMilliseconds(), result?.asMilliseconds());
     });
 
-    test('Calculates duration from ULS log (minutes)', () => {
+    it('Calculates duration from ULS log (minutes)', () => {
         let testObject = new TimeIntervalManipulator();
 
         const firstLine = '10/15/2014 22:53:33.648	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]';
@@ -175,7 +174,7 @@ suite('TimeInterval', () => {
         assert.equal(expected.asMilliseconds(), result?.asMilliseconds());
     });
 
-    test('Calculates duration from ULS log (hours)', () => {
+    it('Calculates duration from ULS log (hours)', () => {
         let testObject = new TimeIntervalManipulator();
 
         const firstLine = '10/15/2014 21:53:33.648	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]';
@@ -188,7 +187,7 @@ suite('TimeInterval', () => {
         assert.equal(expected.asMilliseconds(), result?.asMilliseconds());
     });
 
-    test('Calculates duration from ULS log (days)', () => {
+    it('Calculates duration from ULS log (days)', () => {
         let testObject = new TimeIntervalManipulator();
 
         const firstLine = '10/15/2014 21:53:33.648	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]';
@@ -201,7 +200,7 @@ suite('TimeInterval', () => {
         assert.equal(expected.asMilliseconds(), result?.asMilliseconds());
     });
 
-    test('Calculates duration from ULS log (months)', () => {
+    it('Calculates duration from ULS log (months)', () => {
         let testObject = new TimeIntervalManipulator();
 
         const firstLine = '10/15/2014 21:53:33.648	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]';
@@ -214,7 +213,7 @@ suite('TimeInterval', () => {
         assert.equal(expected.asMilliseconds(), result?.asMilliseconds());
     });
 
-    test('Calculates duration from ULS log (years)', () => {
+    it('Calculates duration from ULS log (years)', () => {
         let testObject = new TimeIntervalManipulator();
 
         const firstLine = '10/15/2001 21:53:33.648	11940	11596	CSI Logging	ttidLogCentralTable	5	Information	--------Committing transaction [aye6e]';
