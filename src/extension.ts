@@ -2,7 +2,6 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import SidebarProvider, { SidebarEntry } from "./SidebarProvider";
-import { TimeIntervalManipulator, TimeIntervalController } from "./timeInterval";
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -18,41 +17,6 @@ export function activate(context: vscode.ExtensionContext) {
 				editor.revealRange(new vscode.Range(line - 1, 0, line, 255));
 			}
 		 });
-
-	const timeCalculator = new TimeIntervalManipulator();
-	const timeController = new TimeIntervalController(timeCalculator);
-
-	context.subscriptions.push(timeController);
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	context.subscriptions.push(vscode.commands.registerCommand('spectacles.trim', () => {
-		// The code you place here will be executed every time your command is executed
-
-		let array = Array<vscode.Range>();
-
-		let editor = vscode.window.activeTextEditor;
-		if (editor) {
-			let lines = editor.document.lineCount;
-			for (var i = 0; i < lines; i++) {
-				let line = editor.document.lineAt(i);
-				let match = line.text.match("\\tCentral Table");
-
-				if (!match || (match.length === 0)) {
-					array.push(line.rangeIncludingLineBreak);
-				}
-			}
-		
-			editor.edit((edit) => {
-				for (var i = 0; i < array.length; i++) {
-					edit.delete(array[i]);
-				}});
-		}
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Trim complete.');
-	}));
 }
 
 // this method is called when your extension is deactivated
