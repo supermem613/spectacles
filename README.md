@@ -15,7 +15,3 @@ When choosing the 'ULS' language for open ULS log files, syntax will be highligh
 A sidebar is provided with the list of Error and Warning lines. By clicking on each line, the log scrolls to the position in question. This allows for easily spotting all the errors and warnings in a log file.
 
 Additionally, a regex expression that can be set in the extension settings will also yield occurences in the sidebar. This can be used to locate specific errors or patterns.
-
-### Time Interval
-
-When selecting spans of lines in an ULS log with this extension, the status bar will show the elapsed duration for the selected set of lines.

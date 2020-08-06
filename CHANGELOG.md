@@ -2,9 +2,13 @@
 
 All notable changes to the "spectacles" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
 ## [Unreleased]
+
+## [0.0.4] - 2020-08-06
+### Removed
+- Removed time interval logic which was causing the extension to fail loading in some cases. It would make
+the sidebar empty.
+- Removed unfinished trim command.
 
 ## [0.0.3] - 2020-08-01
 ### Added

@@ -4,7 +4,8 @@
 	"displayName": "Spectacles",
 	"icon": "resources/spectacles-color.png",
 	"description": "Visual Studio Code Extension for Log Analysis and Visualization of Microsoft ULS / Test Logs",
-	"version": "0.0.3",
+	"version": "0.0.4",
+	"license": "MIT",
 	"engines": {
 		"vscode": "^1.44.0"
 	},
@@ -17,8 +18,7 @@
 	],
 	"activationEvents": [
 		"onView:sidebar",
-		"onLanguage:ULS",
-		"onCommand:spectacles.trim"
+		"onLanguage:ULS"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -55,10 +55,6 @@
 			}
 		],
 		"commands": [
-			{
-				"command": "spectacles.trim",
-				"title": "Trim Log Lines"
-			}
 		],
 		"grammars": [
 			{
@@ -73,7 +69,7 @@
 				"properties": {
 					"spectacles.errorRegex": {
 						"type": "string",
-						"default": null,
+						"default": "\\bcsierr[_a-zA-Z]*\\b|\\bcellerr[_a-zA-Z]*\\b",
 						"description": "Regular expression used to match errors in the log."
 					}
 				}
