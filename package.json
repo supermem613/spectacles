@@ -68,7 +68,7 @@
 				"properties": {
 					"spectacles.errorRegex": {
 						"type": "string",
-						"default": "\\bcsierr[_a-zA-Z]*\\b|\\bcellerr[_a-zA-Z]*\\b",
+						"default": "csierr[_a-zA-Z]*|cellerr[_a-zA-Z]*",
 						"description": "Regular expression used to match errors in the log."
 					}
 				}

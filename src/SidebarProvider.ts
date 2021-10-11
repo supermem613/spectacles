@@ -101,7 +101,7 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 		if (editor)
 		{
 			let lines = editor.document.lineCount;
-			const errorRegex = vscode.workspace.getConfiguration('spectacles').get('errorRegex', '\\bcsierr[_a-zA-Z]*\\b|\\bcellerr[_a-zA-Z]*\\b');
+			const errorRegex = vscode.workspace.getConfiguration('spectacles').get('errorRegex', 'csierr[_a-zA-Z]*|cellerr[_a-zA-Z]*');
 			for (var i = 0; i < lines; i++)
 			{
 				let line = editor.document.lineAt(i);
@@ -183,14 +183,6 @@ export class SidebarEntry extends vscode.TreeItem {
 		public readonly command?: vscode.Command,
 		public readonly iconPath?: string | { light: string; dark: string } ) {
 		super(label, collapsibleState);
-	}
-
-	get tooltip(): string {
-		return this.label;
-	}
-
-	get description(): string {
-		return this.label;
 	}
 
 	contextValue = 'SidebarEntry';
