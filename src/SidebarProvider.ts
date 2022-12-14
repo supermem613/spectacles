@@ -27,7 +27,7 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 	}
 
 	refresh(): void {
-		this._onDidChangeTreeData.fire();
+		this._onDidChangeTreeData.fire(undefined);
 	}
 
 	getTreeItem(element: SidebarEntry): vscode.TreeItem {

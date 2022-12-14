@@ -7,7 +7,7 @@
 	"version": "0.0.9",
 	"license": "MIT",
 	"engines": {
-		"vscode": "^1.44.0"
+		"vscode": "^1.74.0"
 	},
 	"repository": {
 		"type": "git",
