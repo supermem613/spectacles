@@ -11,5 +11,6 @@
     "cSpell.words": [
         "iodash",
         "supermem"
-    ]
+    ],
+    "cmake.configureOnOpen": true
 }

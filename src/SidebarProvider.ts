@@ -168,17 +168,17 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 									path.join(__filename, '..', '..', 'resources', 'warning.svg')));
 						}
 					}
-				}				
+				}
 			}
-        }
-    }
+		}
+	}
 }
 
 export class SidebarEntry extends vscode.TreeItem {
 	constructor(
 		public readonly type: SidebarEntryType,
 		public readonly label: string,
-        public readonly line: number,
+		public readonly line: number,
 		public readonly collapsibleState: vscode.TreeItemCollapsibleState,
 		public readonly command?: vscode.Command,
 		public readonly iconPath?: string | { light: string; dark: string } ) {

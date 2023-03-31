@@ -10,11 +10,6 @@
             "name": "keyword"
         },
         {
-            "comment": "INFO",
-            "match": "(?i)\\b(info)\\b",
-            "name": "keyword"
-        },
-        {
             "comment": "Warning Logging Level",
             "match": "(.*\\tWarning\\t.*)",
             "name": "invalid"
@@ -27,6 +22,11 @@
         {
             "comment": "ISO dates (2016-08-23)",
             "match": "\\b\\d{4}-\\d{2}-\\d{2}",
+            "name": "constant.numeric"
+        },
+        {
+            "comment": "Tags",
+            "match": "\\t([a-z0-9])*\\t",
             "name": "constant.numeric"
         },
         {
@@ -46,18 +46,23 @@
             "name": "constant.numeric"
         },
         {
-            "comment": "String constants",
-            "match": "\"[^\"]*\"",
-            "name": "string.quoted"
+            "comment": "CSI errors",
+            "match": "\\bcsierr([_a-zA-Z.]*)\\b",
+            "name": "invalid"
+        },
+        {
+            "comment": "CErrorException",
+            "match": "CErrorException thrown",
+            "name": "invalid"
+        },
+        {
+            "comment": "SegFault",
+            "match": "SegFault",
+            "name": "invalid"
         },
         {
             "match": "'[^']*'",
             "name": "string.quoted"
-        },
-        {
-            "comment": "CSI errors",
-            "match": "\\bcsierr([_a-zA-Z.]*)\\b",
-            "name": "invalid"
         },
         {
             "comment": "Cell errors",
