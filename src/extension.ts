@@ -8,6 +8,11 @@ import SidebarProvider, { ISidebarEntry } from "./SidebarProvider";
 export function activate(context: vscode.ExtensionContext) {
 	const sidebarProvider = new SidebarProvider();
 	vscode.window.registerTreeDataProvider('sidebar', sidebarProvider);
+
+	// Refresh when the active editor changes or when a document is saved/opened
+	vscode.window.onDidChangeActiveTextEditor(editor => sidebarProvider.refresh(), null, context.subscriptions);
+	vscode.workspace.onDidSaveTextDocument(doc => sidebarProvider.refresh(), null, context.subscriptions);
+	vscode.workspace.onDidOpenTextDocument(doc => sidebarProvider.refresh(), null, context.subscriptions);
 	vscode.commands.registerCommand('sidebar.refreshEntry', () => sidebarProvider.refresh());
 	vscode.commands.registerCommand(
 		'sidebar.gotoLine',

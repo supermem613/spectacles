@@ -109,18 +109,30 @@ export default class SidebarProvider implements vscode.TreeDataProvider<ISidebar
 		if (editor)
 		{
 			let lines = editor.document.lineCount;
-			const errorRegex = vscode.workspace.getConfiguration('spectacles').get('errorRegex', 'csierr[_a-zA-Z]*|cellerr[_a-zA-Z]*');
-			for (var i = 0; i < lines; i++)
+			// Reset previous lists
+			this._errorList.length = 0;
+			this._errorLineList.length = 0;
+			this._warningLineList.length = 0;
+
+			const errorRegexString = vscode.workspace.getConfiguration('spectacles').get('errorRegex', 'csierr[_a-zA-Z]*|cellerr[_a-zA-Z]*');
+			let errorRegex: RegExp | null = null;
+			if (typeof errorRegexString === 'string' && errorRegexString.length > 0) {
+				try {
+					errorRegex = new RegExp(errorRegexString, 'i');
+				} catch (e) {
+					// fallback: treat as plain substring
+					errorRegex = null;
+				}
+			}
+
+			for (let i = 0; i < lines; i++)
 			{
 				let line = editor.document.lineAt(i);
 
 				// Processing for the Error List
-				if (errorRegex)
-				{
-					let match = line.text.match(errorRegex);
-
-					if (match)
-					{
+				if (errorRegex) {
+					const match = line.text.match(errorRegex);
+					if (match) {
 						this._errorList.push(
 							createSidebarEntry(
 								SidebarEntryType.LoggedError,
@@ -130,7 +142,7 @@ export default class SidebarProvider implements vscode.TreeDataProvider<ISidebar
 								{
 									command: 'sidebar.gotoLine',
 									title: '',
-									arguments: [i] 
+									arguments: [i]
 								},
 								vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'error.svg'))));
 					}
@@ -138,10 +150,8 @@ export default class SidebarProvider implements vscode.TreeDataProvider<ISidebar
 
 				// Processing for the Error Line List
 				{
-					let match = line.text.match("\\tError\\t");
-
-					if (match)
-					{
+					// Check for severity columns using tab separators
+					if (line.text.includes('\tError\t')) {
 						this._errorLineList.push(
 							createSidebarEntry(
 								SidebarEntryType.ErrorLine,
@@ -151,33 +161,28 @@ export default class SidebarProvider implements vscode.TreeDataProvider<ISidebar
 								{
 									command: 'sidebar.gotoLine',
 									title: '',
-									arguments: [i] 
+									arguments: [i]
 								},
 								vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'error.svg'))));
-					}
-					else
-					// Processing for the Warning Line List
-					{
-						match = line.text.match("\\tWarning\\t");
-
-						if (match)
-						{
-							this._warningLineList.push(
-								createSidebarEntry(
-									SidebarEntryType.WarningLine,
-									'Line ' + i,
-									i,
-									vscode.TreeItemCollapsibleState.None,
-									{
-										command: 'sidebar.gotoLine',
-										title: '',
-										arguments: [i] 
-									},
-									vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'warning.svg'))));
-						}
+					} else if (line.text.includes('\tWarning\t')) {
+						this._warningLineList.push(
+							createSidebarEntry(
+								SidebarEntryType.WarningLine,
+								'Line ' + i,
+								i,
+								vscode.TreeItemCollapsibleState.None,
+								{
+									command: 'sidebar.gotoLine',
+									title: '',
+									arguments: [i]
+								},
+								vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'warning.svg'))));
 					}
 				}
 			}
+
+			// Mark parsed so we don't reparse unnecessarily
+			this._parsed = true;
 		}
 	}
 }
