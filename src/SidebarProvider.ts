@@ -10,31 +10,39 @@ enum SidebarEntryType {
 	WarningLine = 5,
 }
 
-export default class SidebarProvider implements vscode.TreeDataProvider<SidebarEntry> {
-	private _onDidChangeTreeData: vscode.EventEmitter<SidebarEntry | undefined> = new vscode.EventEmitter<SidebarEntry | undefined>();
-	readonly onDidChangeTreeData: vscode.Event<SidebarEntry | undefined> = this._onDidChangeTreeData.event;
+export default class SidebarProvider implements vscode.TreeDataProvider<ISidebarEntry> {
+	private _onDidChangeTreeData: vscode.EventEmitter<ISidebarEntry | undefined> = new vscode.EventEmitter<ISidebarEntry | undefined>();
+	readonly onDidChangeTreeData: vscode.Event<ISidebarEntry | undefined> = this._onDidChangeTreeData.event;
 
-	private _errorList: Array<SidebarEntry>;
-	private _errorLineList: Array<SidebarEntry>;
-	private _warningLineList: Array<SidebarEntry>;
+	private _errorList: ISidebarEntry[];
+	private _errorLineList: ISidebarEntry[];
+	private _warningLineList: ISidebarEntry[];
 	private _parsed : boolean;
 
 	constructor() {
 		this._parsed = false;
-		this._errorList = new Array<SidebarEntry>(); 
-		this._errorLineList = new Array<SidebarEntry>(); 
-		this._warningLineList = new Array<SidebarEntry>(); 
+		this._errorList = new Array<ISidebarEntry>(); 
+		this._errorLineList = new Array<ISidebarEntry>(); 
+		this._warningLineList = new Array<ISidebarEntry>(); 
 	}
 
 	refresh(): void {
 		this._onDidChangeTreeData.fire(undefined);
 	}
 
-	getTreeItem(element: SidebarEntry): vscode.TreeItem {
-		return element;
+	getTreeItem(element: any): vscode.TreeItem {
+		const item = new vscode.TreeItem(element.label, element.collapsibleState);
+		if (element.command) {
+			item.command = element.command;
+		}
+		if (element.iconPath) {
+			item.iconPath = element.iconPath as any;
+		}
+		item.contextValue = element.contextValue;
+		return item;
 	}
 
-	getChildren(element?: SidebarEntry): Thenable<SidebarEntry[]> {
+	getChildren(element?: any): Thenable<any[]> {
 		if (!element) {
 			return Promise.resolve(this.getRootElements());
 		}
@@ -50,14 +58,14 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 		return Promise.resolve([]);
 	}
 
-	private getRootElements(): SidebarEntry[] {
+	private getRootElements(): ISidebarEntry[] {
 		if (!this._parsed) {
 			this.parseLog();
 		}
 
-		let entries = Array<SidebarEntry>();
+		let entries = Array<ISidebarEntry>();
 
-		entries.push(new SidebarEntry(
+		entries.push(createSidebarEntry(
 			SidebarEntryType.LoggedErrorList,
 			"Logged Error List",
 			0,
@@ -67,9 +75,9 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 				title: '',
 				arguments: undefined
 			},
-			path.join(__filename, '..', '..', 'resources', 'error-list.svg')));
+			vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'error-list.svg'))));
 
-		entries.push(new SidebarEntry(
+		entries.push(createSidebarEntry(
 			SidebarEntryType.ErrorLineList,
 			"Lines with Error Severity",
 			0,
@@ -79,9 +87,9 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 				title: '',
 				arguments: undefined
 			},
-			path.join(__filename, '..', '..', 'resources', 'error-list.svg')));
+			vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'error-list.svg'))));
 
-		entries.push(new SidebarEntry(
+		entries.push(createSidebarEntry(
 			SidebarEntryType.WarningLineList,
 			"Lines with Warning Severity",
 			0,
@@ -91,7 +99,7 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 				title: '',
 				arguments: undefined
 			},
-			path.join(__filename, '..', '..', 'resources', 'warning-list.svg')));
+			vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'warning-list.svg'))));
 
 		return entries;
 	}
@@ -114,7 +122,7 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 					if (match)
 					{
 						this._errorList.push(
-							new SidebarEntry(
+							createSidebarEntry(
 								SidebarEntryType.LoggedError,
 								match[0] + ' at ' + i,
 								i,
@@ -124,7 +132,7 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 									title: '',
 									arguments: [i] 
 								},
-								path.join(__filename, '..', '..', 'resources', 'error.svg')));
+								vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'error.svg'))));
 					}
 				}
 
@@ -135,7 +143,7 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 					if (match)
 					{
 						this._errorLineList.push(
-							new SidebarEntry(
+							createSidebarEntry(
 								SidebarEntryType.ErrorLine,
 								'Line ' + i,
 								i,
@@ -145,7 +153,7 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 									title: '',
 									arguments: [i] 
 								},
-								path.join(__filename, '..', '..', 'resources', 'error.svg')));
+								vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'error.svg'))));
 					}
 					else
 					// Processing for the Warning Line List
@@ -155,8 +163,8 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 						if (match)
 						{
 							this._warningLineList.push(
-								new SidebarEntry(
-									SidebarEntryType.ErrorLine,
+								createSidebarEntry(
+									SidebarEntryType.WarningLine,
 									'Line ' + i,
 									i,
 									vscode.TreeItemCollapsibleState.None,
@@ -165,7 +173,7 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 										title: '',
 										arguments: [i] 
 									},
-									path.join(__filename, '..', '..', 'resources', 'warning.svg')));
+									vscode.Uri.file(path.join(__filename, '..', '..', 'resources', 'warning.svg'))));
 						}
 					}
 				}
@@ -174,16 +182,34 @@ export default class SidebarProvider implements vscode.TreeDataProvider<SidebarE
 	}
 }
 
-export class SidebarEntry extends vscode.TreeItem {
-	constructor(
-		public readonly type: SidebarEntryType,
-		public readonly label: string,
-		public readonly line: number,
-		public readonly collapsibleState: vscode.TreeItemCollapsibleState,
-		public readonly command?: vscode.Command,
-		public readonly iconPath?: string | { light: string; dark: string } ) {
-		super(label, collapsibleState);
-	}
-
-	contextValue = 'SidebarEntry';
+export interface ISidebarEntry {
+	type: SidebarEntryType;
+	label: string;
+	line: number;
+	collapsibleState: vscode.TreeItemCollapsibleState;
+	command?: vscode.Command;
+	iconPath?: string | vscode.Uri | { light: vscode.Uri; dark: vscode.Uri };
+	contextValue?: string;
 }
+
+export function createSidebarEntry(
+	type: SidebarEntryType,
+	label: string,
+	line: number,
+	collapsibleState: vscode.TreeItemCollapsibleState,
+	command?: vscode.Command,
+	iconPath?: string | vscode.Uri | { light: vscode.Uri; dark: vscode.Uri }
+): ISidebarEntry {
+	return {
+		type,
+		label,
+		line,
+		collapsibleState,
+		command,
+		iconPath,
+		contextValue: 'SidebarEntry'
+	};
+}
+
+// exported marker to help tooling detect file updates
+export const __spectacles_sidebar_provider_marker = true;
