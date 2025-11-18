@@ -4,7 +4,7 @@
 	"displayName": "Spectacles",
 	"icon": "resources/spectacles-color.png",
 	"description": "Visual Studio Code Extension for Log Analysis and Visualization of Microsoft ULS / Test Logs",
-	"version": "0.0.14",
+	"version": "0.0.15",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.106.0"
