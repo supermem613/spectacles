@@ -4,7 +4,7 @@
 	"displayName": "Spectacles",
 	"icon": "resources/spectacles-color.png",
 	"description": "Visual Studio Code Extension for Log Analysis and Visualization of Microsoft ULS / Test Logs",
-	"version": "0.0.15",
+	"version": "0.0.16",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.106.0"
@@ -16,7 +16,6 @@
 	"categories": [
 		"Other"
 	],
-
 	"main": "./out/extension.js",
 	"activationEvents": [
 		"onView:sidebar",
@@ -87,7 +86,6 @@
 	},
 	"devDependencies": {
 		"@types/chai": "^5.2.3",
-		"@types/glob": "^8.1.0",
 		"@types/mocha": "^10.0.10",
 		"@types/node": "^24.10.1",
 		"@types/vscode": "^1.106.1",
@@ -102,10 +100,15 @@
 		"moment": "^2.30.1",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.9.3",
-		"vscode-test": "^1.6.1",
+		"vscode-test": "^1.4.1",
 		"y18n": ">=5.0.8"
 	},
 	"dependencies": {
 		"expect": "^30.2.0"
+	},
+	"overrides": {
+		"diff": "^8.0.3",
+		"serialize-javascript": "^7.0.4",
+		"@tootallnate/once": "^3.0.1"
 	}
 }
