@@ -4,6 +4,12 @@ All notable changes to the "spectacles" extension will be documented in this fil
 
 ## [Unreleased]
 
+## [0.0.18] - 2026-07-26
+### Security
+- Fixed all `npm audit` findings (12 high). Upgraded `eslint` to 10.x and pinned `minimatch` to `^10.2.5` and `brace-expansion` to `>=5.0.8` via overrides, resolving GHSA-mh99-v99m-4gvg (brace-expansion DoS).
+### Changed
+- Updated `eslint.config.cjs` to pass the parser object instead of a module path, required by ESLint 10.
+
 ## [0.0.5] - 2021-05-24
 ### Added
 - Fixed security issue with ;odash and y18n
